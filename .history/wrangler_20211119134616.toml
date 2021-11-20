@@ -1,0 +1,11 @@
+name = "cloudflare-realm-todos"
+type = "javascript"
+
+account_id = ""
+workers_dev = true
+compatibility_date = "2021-11-19"
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"

@@ -1,0 +1,18 @@
+{
+  "name": "worker-typescript-template",
+  "version": "1.0.0",
+  "description": "Cloudflare worker TypeScript template",
+  "main": "dist/worker.js",
+  "scripts": {
+    "build": "worktop build",
+    "format": "prettier --write  '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
+    "lint": "eslint --max-warnings=0 src && prettier --check '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
+    "test": "jest --config jestconfig.json --verbose"
+  },
+  "license": "MIT OR Apache-2.0",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.1.1",
+    "typescript": "4.4.3",
+    "worktop.build": "0.0.3"
+  }
+}

@@ -1,0 +1,17 @@
+name = "cloudflare-realm-todos"
+type = "javascript"
+
+account_id = "ae78534f6c5b673f97bbc5cea1850725"
+workers_dev = true
+compatibility_date = "2021-11-19"
+
+[build]
+command = "npm install && npm run build"
+
+[build.upload]
+dir = "build"
+main = "./index.mjs"
+format = "modules"
+
+[vars]
+REALM_APPID = "application-0-kjpvq"
